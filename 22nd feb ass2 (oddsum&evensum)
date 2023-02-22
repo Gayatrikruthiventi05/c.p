@@ -1,0 +1,19 @@
+//write a program to print diff between odd sum and even sum//
+#include <stdio.h>
+ void main()
+{
+    int i,num,oddsum,evensum,diff;
+  printf("Enter the value of num\n");
+    scanf("%d", &num);
+    for (i = 1; i <= num; i++)
+    {
+        if (i % 2 == 0)
+            evensum = evensum + i;
+        else
+            oddsum = oddsum + i;
+    }
+    printf("Sum of all odd numbers  = %d\n", oddsum);
+    printf("Sum of all even numbers = %d\n", evensum);
+diff=evensum-oddsum;
+   printf("%d",diff);
+}
